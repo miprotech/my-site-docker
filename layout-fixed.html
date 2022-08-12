@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class="bootstrap-layout">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fixed Layout</title>
+
+  <!-- Prevent the demo from appearing in search engines (REMOVE THIS) -->
+  <meta name="robots" content="noindex">
+
+  <!-- Material Design Icons  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Roboto Web Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+
+  <!-- App CSS -->
+  <link type="text/css" href="assets/css/style.min.css" rel="stylesheet">
+
+  <!-- Charts CSS -->
+  <link rel="stylesheet" href="examples/css/morris.min.css">
+
+  <!-- Vector Maps -->
+  <link rel="stylesheet" href="assets/vendor/jquery-jvectormap.css">
+  <link rel="stylesheet" href="examples/css/jvectormap.min.css">
+
+</head>
+
+<body class="layout-content top-navbar">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark navbar-full navbar-fixed-top">
+    <div class="container">
+
+      <!-- Navbar toggle -->
+      <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbarMenu"><span class="material-icons">menu</span></button>
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <i class="material-icons">control_point</i> AdminPlus
+      </a>
+
+      <!-- Collapse -->
+      <div class="collapse navbar-toggleable-xs" id="navbarMenu">
+        <ul class="nav navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Admin</a>
+          </li>
+        </ul>
+      </div>
+      <!-- // END Collapse -->
+
+      <!-- Menu -->
+      <ul class="nav hidden-sm-down pull-xs-left first-child-md">
+        <li class="nav-item">
+          <a class=" btn btn-success btn-rounded-deep">
+			New Quote <i class="material-icons md-18">add</i>
+		</a>
+        </li>
+      </ul>
+      <!-- // END Menu -->
+
+      <!-- Menu -->
+      <ul class="nav navbar-nav pull-xs-right">
+
+        <!-- Notifications dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-caret="false" data-toggle="dropdown" role="button" aria-haspopup="false"><i class="material-icons email">mail_outline</i></a>
+          <ul class="dropdown-menu dropdown-menu-right notifications" aria-labelledby="Preview">
+            <li class="dropdown-title">Emails</li>
+            <li class="dropdown-item email-item">
+              <a class="nav-link" href="index.html">
+                <span class="media">
+					<span class="media-left media-middle"><i class="material-icons">mail</i></span>
+                <span class="media-body media-middle">
+						<small class="pull-xs-right text-muted">12:20</small>
+						<strong>Adrian Demian</strong>
+						Enhance your website with
+					</span>
+                </span>
+              </a>
+            </li>
+            <li class="dropdown-item email-item">
+              <a class="nav-link" href="index.html">
+                <span class="media">
+					<span class="media-left media-middle">
+						<i class="material-icons">mail</i>
+					</span>
+                <span class="media-body media-middle">
+						<small class="text-muted pull-xs-right">30 min</small>
+						<strong>Michael Brain</strong>
+						Partnership proposal
+					</span>
+                </span>
+              </a>
+            </li>
+            <li class="dropdown-item email-item">
+              <a class="nav-link" href="index.html">
+                <span class="media">
+					<span class="media-left media-middle">
+						<i class="material-icons">mail</i>
+					</span>
+                <span class="media-body media-middle">
+						<small class="text-muted pull-xs-right">1 hr</small>
+						<strong>Sammie Downey</strong>
+						UI Design
+					</span>
+                </span>
+              </a>
+            </li>
+            <li class="dropdown-action center">
+              <a href="email.html">Go to inbox</a>
+            </li>
+          </ul>
+        </li>
+        <!-- // END Notifications dropdown -->
+
+        <!-- User dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle p-a-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false">
+            <img src="assets/images/people/50/guy-6.jpg" alt="Avatar" class="img-circle" width="40">
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu-list" aria-labelledby="Preview">
+            <a class="dropdown-item" href="#"><i class="material-icons md-18">lock</i> <span class="icon-text">Edit Account</span></a>
+            <a class="dropdown-item" href="#"><i class="material-icons md-18">person</i> <span class="icon-text">Public Profile</span></a>
+            <a class="dropdown-item" href="#">Logout</a>
+          </div>
+        </li>
+        <!-- // END User dropdown -->
+
+      </ul>
+      <!-- // END Menu -->
+
+    </div>
+  </nav>
+  <!-- // END Navbar -->
+
+  <!-- Breadcrumb -->
+  <div class="container-fluid breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li class="active">Data</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+
+    <div class="card-group">
+      <div class="card">
+        <a href="#" class="pull-xs-left p-absolute p-a-1 text-muted"><i class="material-icons">description</i></a>
+        <div class="card-block center">
+          <h2 class="m-b-0">
+            <strong>15</strong>
+          </h2>
+          <small class="text-muted">QUOTES</small>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#" class="pull-xs-left p-absolute p-a-1 text-muted"><i class="material-icons">gavel</i></a>
+        <div class="card-block center">
+          <h2 class="m-b-0">
+            <strong>12</strong>
+          </h2>
+          <small class="text-muted">DEALS</small>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#" class="pull-xs-left p-absolute p-a-1 text-muted"><i class="material-icons">done_all</i></a>
+        <div class="card-block center">
+          <h2 class="m-b-0">
+            <strong>5</strong>
+          </h2>
+          <small class="text-muted">COMPLETED</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div id="area" style="height:180px;"></div>
+          <div class="card-footer bg-white">
+            <div class="media o-visible">
+              <div class="media-body">
+                <div class="card-title">Total Visits </div>
+                <div class="card-subtitle">February 2015</div>
+              </div>
+              <div class="media-right media-middle">
+                <a href="#" class="text-muted btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="material-icons">arrow_forward</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <!-- 4:3 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9 p-b-0" style=" height:180px;">
+            <iframe class="embed-responsive-item" src="//player.vimeo.com/video/50522981?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" style="border:none;"></iframe>
+          </div>
+          <div class="card-footer bg-white">
+            <div class="media o-visible">
+              <div class="media-body media-middle">
+                <div class="card-title"><a href="#">Learn to Animate</a></div>
+                <div class="card-subtitle">Quick intro into Animations</div>
+              </div>
+              <div class="media-right media-middle">
+
+                <div class="dropdown">
+                  <a href="#" class="text-muted btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="material-icons">more_vert</i></a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card-danger">
+          <div class="card-block">
+            <div class="media">
+              <div class="media-body media-middle">
+                <h4 class="card-title">Completed Tasks</h4>
+                <div class="card-subtitle">Total completed tasks by Staff</div>
+              </div>
+              <div class="media-right media-middle">
+                <a href="#" class="btn btn-white btn-circle"><i class="material-icons">add</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Traffic</h4>
+            <p class="card-subtitle">December's Visits</p>
+          </div>
+          <div id="world-map-markers" data-toggle="vector-world-map-markers" class="overflow-hidden height-180" style="padding:10px;"></div>
+          <ul class="list-group list-group-fit">
+            <li class="list-group-item">
+              <div class="media">
+                <div class="media-left media-middle">
+                  <img src="https://lipis.github.io/flag-icon-css/flags/4x3/us.svg" height="20" class="img-rounded">
+                </div>
+                <div class="media-body media-middle">
+                  United States
+                </div>
+                <div class="media-right media-middle">
+                  5,240
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="media">
+                <div class="media-left media-middle">
+                  <img src="https://lipis.github.io/flag-icon-css/flags/4x3/eu.svg" height="20" class="img-rounded">
+                </div>
+                <div class="media-body media-middle">
+                  Europe
+                </div>
+                <div class="media-right media-middle">
+                  2,958
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="media">
+                <div class="media-left media-middle">
+                  <img src="https://lipis.github.io/flag-icon-css/flags/4x3/in.svg" height="20" class="img-rounded">
+                </div>
+                <div class="media-body media-middle">
+                  India
+                </div>
+                <div class="media-right media-middle">
+                  1,425
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="media">
+                <div class="media-left media-middle">
+                  <img src="https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg" height="20" class="img-rounded">
+                </div>
+                <div class="media-body media-middle">
+                  United Kingdom
+                </div>
+                <div class="media-right media-middle">
+                  1,136
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">
+              Latest Orders
+            </h4>
+          </div>
+          <ul class="list-group list-group-fit">
+            <li class="list-group-item">
+
+              <div class="media">
+                <div class="media-left media-middle">
+                  <small class="label label-default label-pill">24/12/2015</small>
+                </div>
+                <div class="media-body media-middle">
+                  <a href="#">Order #21213</a>
+                </div>
+                <div class="media-right media-middle">
+                  $312.50
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+
+              <div class="media">
+                <div class="media-left media-middle">
+                  <small class="label label-default label-pill">15/12/2015</small>
+                </div>
+                <div class="media-body media-middle">
+                  <a href="#">Order #21213</a>
+                </div>
+                <div class="media-right media-middle">
+                  $70.00
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+
+              <div class="media">
+                <div class="media-left media-middle">
+                  <small class="label label-default label-pill">24/12/2015</small>
+                </div>
+                <div class="media-body media-middle">
+                  <a href="#">Order #21213</a>
+                </div>
+                <div class="media-right media-middle">
+                  $201.50
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+
+              <div class="media">
+                <div class="media-left media-middle">
+                  <small class="label label-default label-pill">24/12/2015</small>
+                </div>
+                <div class="media-body media-middle">
+                  <a href="#">Order #21213</a>
+                </div>
+                <div class="media-right media-middle">
+                  $189.00
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- jQuery -->
+  <script src="assets/vendor/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="assets/vendor/tether.min.js"></script>
+  <script src="assets/vendor/bootstrap.min.js"></script>
+
+  <!-- AdminPlus -->
+  <script src="assets/vendor/adminplus.js"></script>
+
+  <!-- App JS -->
+  <script src="assets/js/main.min.js"></script>
+
+  <!-- Theme Colors -->
+  <script src="assets/js/colors.js"></script>
+
+  <!-- Charts JS -->
+  <script src="assets/vendor/raphael.min.js"></script>
+  <script src="assets/vendor/morris.min.js"></script>
+
+  <!-- Vector Maps -->
+  <script src="assets/vendor/jquery.jvectormap.min.js"></script>
+  <script src="assets/data/vector-maps/custom/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="examples/js/vector-maps.min.js"></script>
+
+  <!-- Initialize Charts -->
+  <script src="examples/js/chart.min.js"></script>
+
+</body>
+
+</html>
